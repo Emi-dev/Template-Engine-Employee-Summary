@@ -44,6 +44,12 @@ async function init() {
             if(!addEmployee.yes) addMore = false;
             id++;
         }
+        
+        fs.writeFile("./output/team.html", html(employeeCards), function(err) {
+            if(err) return console.log(err);
+            console.log("team.html file successfully created!");
+          
+        });
     } catch(err) {
         console.log(err);
     }
