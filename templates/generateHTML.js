@@ -1,3 +1,4 @@
+// function to generate the main HTML
 function generateHTML(data) {
     return `<!DOCTYPE html>
     <html lang="en">
@@ -43,7 +44,7 @@ function generateHTML(data) {
             <div class="jumbotron text-center">
                 <h1><i class="fas fa-users"></i></i> Employees</h1>
             </div>
-            <div class="container">
+            <div class="container row m-auto">
                 ${data}
             </div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
